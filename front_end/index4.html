@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HomeAway Case Study</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <style>
+        #bubble {
+            padding-left: 250px;
+        }
+
+      .jumbotron {
+            background-image: url("hw.png");
+            color: red;
+            background-size: auto 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron" style="text-align: center">
+           
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>
+                    How does it compare between supplier type?
+                </h2>
+                <select id="selDataset4">
+                    <option value="dataset1111">Booking conversion and inquiry conversion for each site</option>
+                    <option value="dataset2222">Cancellation rate for each site</option>
+                    <option value="dataset3333">Take rate for each site</option>
+                </select>
+            </div>
+            <div class="col-md-8">
+                <h2>
+                    Plots
+                </h2>
+                <div id="bar4"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>
+                    <a href="index.html">Home Page</a>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <script src="js/plots4.js"></script>
+</body>
+
+</html>

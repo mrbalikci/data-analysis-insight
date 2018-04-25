@@ -1,0 +1,3622 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.18.0210.2209                               -->
+<workbook source-build='10.5.1 (10500.18.0210.2209)' source-platform='win' version='10.5' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='ha_case' path='/workbooks' revision='1.3' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Data (Data Analyst Homework Queestions)' inline='true' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Data Analyst Homework Queestions' name='excel-direct.0yk8iwo1x6y4gz1cllq9y0q4lf4u'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/mrbal/OneDrive/Documents/UtDATA/JobHunt/HomeAway/case/Data Analyst Homework Queestions.xlsx' interpretationMode='1' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0yk8iwo1x6y4gz1cllq9y0q4lf4u' name='Data' table='[Data$]' type='table'>
+          <columns gridOrigin='A1:H7729:no:A1:H7729:1' header='yes' lost='0' outcome='1' processed='23184'>
+            <column datatype='string' name='Site' ordinal='0' />
+            <column datatype='string' name='Month of Date Id' ordinal='1' />
+            <column datatype='integer' name='Day of Date Id' ordinal='2' />
+            <column datatype='integer' name='Year of Date Id' ordinal='3' />
+            <column datatype='string' name='Measure Names' ordinal='4' />
+            <column datatype='string' name='Person Type' ordinal='5' />
+            <column datatype='string' name='Supplier Type' ordinal='6' />
+            <column datatype='real' name='Measure Values' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Site</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Site]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Site</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month of Date Id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Month of Date Id]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Month of Date Id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day of Date Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Day of Date Id]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Day of Date Id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year of Date Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year of Date Id]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Year of Date Id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Measure Names</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Measure Names]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Measure Names</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Person Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Person Type]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Person Type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Supplier Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Supplier Type]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Supplier Type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Measure Values</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Measure Values]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Measure Values</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H7729:no:A1:H7729:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>23184</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM([Measure Values])) - LOOKUP(ZN(SUM([Measure Values])), -1)'>
+          <table-calc ordering-type='Table' />
+        </calculation>
+      </column>
+      <column caption='percent ' datatype='integer' name='[Calculation_221802335674904578]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Measure Names] = &apos;Inquiries&apos; &#13;&#10;    and [Measure Names] = &apos;Total Net Bookings&apos; &#13;&#10;&#13;&#10;THEN 1&#13;&#10;END' />
+      </column>
+      <column caption='Inquiries' datatype='real' name='[Calculation_221802335903744005]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Site] = &apos;Site A&apos; AND [Measure Names] = &apos;Inquiries&apos; THEN SUM([Measure Values]) END' />
+      </column>
+      <column datatype='integer' name='[Day of Date Id]' role='measure' type='quantitative' />
+      <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[Measure Values1 (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='4' formula='[Measure Values]' peg='0' size='14028' />
+      </column>
+      <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Person Type]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Supplier Type]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Year of Date Id]' role='dimension' type='nominal' />
+      <column-instance column='[Measure Names]' derivation='Attribute' name='[attr:Measure Names:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Measure Values]' derivation='Attribute' name='[attr:Measure Values:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Measure Values]' derivation='Avg' name='[avg:Measure Values:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Measure Values]' derivation='Count' name='[cnt:Measure Values:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Measure Values]' derivation='CountD' name='[ctd:Measure Values:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Measure Values]' derivation='Stdev' name='[diff:std:Measure Values:qk:2]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Columns' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Measure Values]' derivation='Stdev' name='[diff:std:Measure Values:qk:4]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Table' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Measure Values]' derivation='Stdev' name='[diff:std:Measure Values:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Measure Values]' derivation='Sum' name='[diff:sum:Measure Values:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Table' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Measure Values]' derivation='Min' name='[min:Measure Values:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Day of Date Id]' derivation='None' name='[none:Day of Date Id:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Measure Values]' derivation='None' name='[none:Measure Values:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Year of Date Id]' derivation='None' name='[none:Year of Date Id:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Measure Values]' derivation='Stdev' name='[std:Measure Values:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Day of Date Id]' derivation='Sum' name='[sum:Day of Date Id:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Year of Date Id]' derivation='Sum' name='[sum:Year of Date Id:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' />
+      </column-instance>
+      <group caption='Action (Measure Names1,Person Type,Site,Supplier Type)' hidden='true' name='[Action (Measure Names1,Person Type,Site,Supplier Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Measure Names]' />
+          <groupfilter function='level-members' level='[Person Type]' />
+          <groupfilter function='level-members' level='[Site]' />
+          <groupfilter function='level-members' level='[Supplier Type]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Measure Names1,Site)' hidden='true' name='[Action (Measure Names1,Site)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Measure Names]' />
+          <groupfilter function='level-members' level='[Site]' />
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/mrbal/OneDrive/Documents/UtDATA/JobHunt/HomeAway/case_study/tableau/Data (Data Analyst Homework Queestions).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Site</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Site]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Site</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month of Date Id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month of Date Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month of Date Id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day of Date Id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Day of Date Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Day of Date Id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year of Date Id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Year of Date Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year of Date Id</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Measure Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Measure Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Measure Names</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Person Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Person Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Person Type</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Supplier Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Supplier Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Supplier Type</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Measure Values</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Measure Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Measure Values</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Data</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1722</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.519943' measure-ordering='alphabetic' measure-percentage='0.480057' rowDisplayCount='2000' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Day of Date Id:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Day of Date Id:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Year of Date Id:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[attr:Measure Values:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[avg:Measure Values:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[cnt:Measure Values:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[ctd:Measure Values:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[diff:std:Measure Values:qk:2]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[diff:std:Measure Values:qk:4]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[diff:std:Measure Values:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[diff:sum:Measure Values:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[min:Measure Values:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Values:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[std:Measure Values:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[usr:Calculation1:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Measure Names:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Total Net Bookings&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Total Cancellations&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Property Detail Page Views&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Transactional Sales&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Gross Booking Value&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Total Gross Bookings&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Inquiries&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Site:nk]' palette='tableau10_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Site A&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Site B&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:Measure Names:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Inquiries&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Total Cancellations&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Property Detail Page Views&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Transactional Sales&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Gross Booking Value&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Total Gross Bookings&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Total Net Bookings&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[sum:Measure Values:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>2226.0</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>5935.0</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>13777.0</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>206920.0</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>1037684.3999999997</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>1037684.4</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>1687111.7999999996</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>658.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>5508.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>41625.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>63371.0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>144014.90348799998</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>144014.90348800004</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>819111.94294900005</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>19288965.077275995</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>38005267.897204988</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>1516.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>3305.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>8516.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>143941.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>421061.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>1054412.0999999999</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>905218.0</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>2848.0</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>9759.0</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>17252.0</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>308515.59999999992</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>2453293.0218669991</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>2453293.021867</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>3534690.9854529998</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>2309.0</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>6260.0</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>14843.0</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>208867.0</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>1783007.1354980001</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>1955687.4999999995</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>1955687.5000000012</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>1543.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>3614.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>9989.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>186405.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>593512.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>1334329.2999999996</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>4251.0</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>34565.0</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>39459.648851000013</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>55817.0</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>670285.88636900007</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>15639919.454413008</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>21667301.969505001</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>21667301.969505016</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>959.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>1617.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>5646.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>69484.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>255889.0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>974353.13041399978</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>22365348.442792006</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>38005267.89720501</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>65839627.420977011</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>3787.0</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>23766.0</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>32042.0</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>44368.0</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>519551.20000000001</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>7484026.5176669993</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>7484026.5176670011</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>8809231.9282780029</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>1789.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>4696.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>11988.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>189964.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>612829.96904200001</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>612829.96904200013</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>1406679.6966389993</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>2870.0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>9839.0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>17313.0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>386592.0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>2876166.8999999999</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>2876166.9000000004</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>3949335.5322139994</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>3412.0</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>15382.0</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>18261.0</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>412631.90942099999</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>3021441.0999999992</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>5556918.1666559996</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>4193.0</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>29869.0</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>34905.0</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>50303.0</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>651200.77827500016</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>11740951.272140998</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>11740951.272141</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>12858070.041226998</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>4549.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>43673.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>98276.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>708616.3000000004</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>17652616.610915005</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>36941581.688190997</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>36941581.688191012</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2470.0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>15026.0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>212194.0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>853242.0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1821754.8</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2225791.6395879993</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2225791.6395880012</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>2148.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>5543.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>12144.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>200198.05962099999</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>1017131.9000000004</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>1017131.9000000005</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>1578041.7491859999</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1103.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>6866.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>74668.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>104555.25463700002</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>333905.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>977093.89999999967</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>23647423.761290994</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>65839627.420976996</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>3593.0</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>20461.0</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>28255.0</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>518133.20000000001</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>4111145.5497789998</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>4111145.5497790007</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>6184033.1054849997</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>2673.0</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>8142.0</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>16113.0</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>284861.59999999992</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>2229242.5274609993</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>2229242.5274609998</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>3136792.419365</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>1305.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2646.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>8473.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>114347.89999999999</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>399209.49999999983</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>399209.49999999988</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>978593.59999999998</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>42192203.659685999</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Data (Data Analyst Homework Queestions) (2)' inline='true' name='federated.0e360jn0klr0ob1g6bhmg05522wx' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Data Analyst Homework Queestions' name='excel.0ss1cac1uxmunc126thlr0dfaf50'>
+            <connection class='excel' driver='Ace12' filename='C:/Users/mrbal/OneDrive/Documents/UtDATA/JobHunt/HomeAway/case/Data Analyst Homework Queestions.xlsx' header='yes' imex='1' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel.0ss1cac1uxmunc126thlr0dfaf50' name='Data$' table='[Data$]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Day of Date Id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Day of Date Id]</local-name>
+            <parent-name>[Data$]</parent-name>
+            <remote-alias>Day of Date Id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Measure Names</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Measure Names]</local-name>
+            <parent-name>[Data$]</parent-name>
+            <remote-alias>Measure Names</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2_WO' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Measure Values</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Measure Values]</local-name>
+            <parent-name>[Data$]</parent-name>
+            <remote-alias>Measure Values</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month of Date Id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Month of Date Id]</local-name>
+            <parent-name>[Data$]</parent-name>
+            <remote-alias>Month of Date Id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2_WO' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Person Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Person Type]</local-name>
+            <parent-name>[Data$]</parent-name>
+            <remote-alias>Person Type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2_WO' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Site</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Site]</local-name>
+            <parent-name>[Data$]</parent-name>
+            <remote-alias>Site</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2_WO' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Supplier Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Supplier Type]</local-name>
+            <parent-name>[Data$]</parent-name>
+            <remote-alias>Supplier Type</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2_WO' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year of Date Id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Year of Date Id]</local-name>
+            <parent-name>[Data$]</parent-name>
+            <remote-alias>Year of Date Id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' datatype-customized='true' name='[Day of Date Id]' role='dimension' type='quantitative' />
+      <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+      <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' datatype-customized='true' name='[Year of Date Id]' role='dimension' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/mrbal/OneDrive/Documents/UtDATA/JobHunt/HomeAway/case_study/tableau/Data (Data Analyst Homework Queestions) (2).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Site</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Site]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Site</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Data$</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month of Date Id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month of Date Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month of Date Id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Data$</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day of Date Id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Day of Date Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Day of Date Id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Data$</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year of Date Id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year of Date Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year of Date Id</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Data$</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Measure Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Measure Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Measure Names</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Data$</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Person Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Person Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Person Type</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Data$</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Supplier Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Supplier Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Supplier Type</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Data$</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Measure Values</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Measure Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Measure Values</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Data$</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1722</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.592593' measure-ordering='alphabetic' measure-percentage='0.407407' rowDisplayCount='2000' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Site' />
+        <field-sort-custom-order field='Month of Date Id' />
+        <field-sort-custom-order field='Day of Date Id' />
+        <field-sort-custom-order field='Year of Date Id' />
+        <field-sort-custom-order field='Calculation_221802335896698883' />
+        <field-sort-custom-order field='Measure Names' />
+        <field-sort-custom-order field='Person Type' />
+        <field-sort-custom-order field='Supplier Type' />
+        <field-sort-custom-order field='Measure Values' />
+      </field-sort-info>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='All-Table'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+            <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+            <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Person Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Supplier Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Year of Date Id]' role='dimension' type='nominal' />
+            <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Person Type]' derivation='None' name='[none:Person Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Supplier Type]' derivation='None' name='[none:Supplier Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year of Date Id]' derivation='None' name='[none:Year of Date Id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]'>
+            <groupfilter function='level-members' level='[none:Measure Names:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]'>
+            <groupfilter function='level-members' level='[none:Person Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]'>
+            <groupfilter function='level-members' level='[none:Site:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]'>
+            <groupfilter function='level-members' level='[none:Supplier Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year of Date Id:nk]' member='&quot;2016&quot;' />
+              <groupfilter function='member' level='[none:Year of Date Id:nk]' member='&quot;2017&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' value='Measure Names'>
+              <formatted-text>
+                <run>Measure Names</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' />
+              <text column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Measure Names1:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Person Type:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Site:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Supplier Type:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Year of Date Id:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Measure Values:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk] / ([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk] / ([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk] / [federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk])))</rows>
+        <cols>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='All-Viz-1'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+            <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+            <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Person Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Supplier Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Year of Date Id]' role='dimension' type='nominal' />
+            <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Person Type]' derivation='None' name='[none:Person Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Supplier Type]' derivation='None' name='[none:Supplier Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year of Date Id]' derivation='None' name='[none:Year of Date Id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]'>
+            <groupfilter from='&quot;Total Cancellations&quot;' function='range' level='[none:Measure Names:nk]' to='&quot;Transactional Sales&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]'>
+            <groupfilter function='level-members' level='[none:Person Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]'>
+            <groupfilter function='member' level='[none:Site:nk]' member='&quot;Site B&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]'>
+            <groupfilter function='member' level='[none:Supplier Type:nk]' member='&quot;Platform&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]'>
+            <groupfilter function='member' level='[none:Year of Date Id:nk]' member='&quot;2017&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' scope='cols' value='Measure Values' />
+            <format attr='subtitle' class='0' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' scope='cols' value='true' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' value='Measure Names'>
+              <formatted-text>
+                <run>Measure Names</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:ok]' />
+              <lod column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Measure Names1:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Person Type:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Site:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Supplier Type:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Year of Date Id:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Measure Values:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk] / ([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk] / ([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk] / [federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk])))</rows>
+        <cols>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='All-Viz-2'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+            <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+            <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Person Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Supplier Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Year of Date Id]' role='dimension' type='nominal' />
+            <column-instance column='[Year of Date Id]' derivation='Attribute' name='[attr:Year of Date Id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Person Type]' derivation='None' name='[none:Person Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Supplier Type]' derivation='None' name='[none:Supplier Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year of Date Id]' derivation='None' name='[none:Year of Date Id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Inquiries&quot;' />
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Total Net Bookings&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]'>
+            <groupfilter function='level-members' level='[none:Person Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]'>
+            <groupfilter function='member' level='[none:Site:nk]' member='&quot;Site B&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]'>
+            <groupfilter function='level-members' level='[none:Supplier Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]'>
+            <groupfilter function='level-members' level='[none:Year of Date Id:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' value='Measure Names'>
+              <formatted-text>
+                <run>Measure Names</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:ok]' />
+              <size column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' />
+              <tooltip column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[attr:Year of Date Id:nk]' />
+              <text column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]' />
+              <text column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' />
+              <text column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]' />
+              <text column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' />
+              <text column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]' />
+              <lod column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Measure Names1:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Person Type:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Site:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Supplier Type:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Measure Values:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Year of Date Id:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='All-Viz-3'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+            <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+            <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Person Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Supplier Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Year of Date Id]' role='dimension' type='nominal' />
+            <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Person Type]' derivation='None' name='[none:Person Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Supplier Type]' derivation='None' name='[none:Supplier Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year of Date Id]' derivation='None' name='[none:Year of Date Id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]'>
+            <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Total Cancellations&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]'>
+            <groupfilter function='level-members' level='[none:Person Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]'>
+            <groupfilter function='level-members' level='[none:Site:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]'>
+            <groupfilter function='member' level='[none:Supplier Type:nk]' member='&quot;Platform&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year of Date Id:nk]' member='&quot;2016&quot;' />
+              <groupfilter function='member' level='[none:Year of Date Id:nk]' member='&quot;2017&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' value='Measure Names'>
+              <formatted-text>
+                <run>Measure Names</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' />
+              <color column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:ok]' />
+              <text column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]' />
+              <text column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' />
+              <text column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]' />
+              <text column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' />
+              <lod column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='All-Viz-4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+            <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+            <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Person Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Supplier Type]' role='dimension' type='nominal' />
+            <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Person Type]' derivation='None' name='[none:Person Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Supplier Type]' derivation='None' name='[none:Supplier Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Inquiries&quot;' />
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Total Net Bookings&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]'>
+            <groupfilter function='level-members' level='[none:Person Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]'>
+            <groupfilter function='level-members' level='[none:Site:nk]' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]'>
+            <groupfilter function='level-members' level='[none:Supplier Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]' value='104' />
+            <format attr='width' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' value='56' />
+            <format attr='width' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' value='212' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk] / ([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk] / ([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk] / [federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk])))</rows>
+        <cols>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='All-Viz-6'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+            <column datatype='integer' name='[Day of Date Id]' role='measure' type='quantitative' />
+            <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+            <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Person Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Supplier Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Year of Date Id]' role='dimension' type='nominal' />
+            <column-instance column='[Day of Date Id]' derivation='None' name='[none:Day of Date Id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Person Type]' derivation='None' name='[none:Person Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Supplier Type]' derivation='None' name='[none:Supplier Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year of Date Id]' derivation='None' name='[none:Year of Date Id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]'>
+            <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Total Cancellations&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]'>
+            <groupfilter function='member' level='[none:Person Type:nk]' member='&quot;PM&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]'>
+            <groupfilter function='member' level='[none:Supplier Type:nk]' member='&quot;Platform&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year of Date Id:nk]' member='&quot;2016&quot;' />
+              <groupfilter function='member' level='[none:Year of Date Id:nk]' member='&quot;2017&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' scope='rows' value='Measure Values' />
+            <format attr='subtitle' class='0' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='vertical-align' data-class='subtotal' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' value='center' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' value='Measure Names&#10;'>
+              <formatted-text>
+                <run>Measure Names&#10;</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' />
+              <lod column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Day of Date Id:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Day of Date Id:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Measure Names1:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Person Type:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Site:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Supplier Type:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Year of Date Id:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Measure Values:&#9;</run>
+                <run bold='true'>&lt;[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>(([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk] / ([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk] / ([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk] / [federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]))) * [federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk])</rows>
+        <cols>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Day of Date Id:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Q1A1-Table'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f28e2b'>Inquiries and Total Net Bookings for each Sites</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+            <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+            <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Inquiries&quot;' />
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Total Net Bookings&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' value='136' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' value='168' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' palette='orange_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' />
+              <text column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]</rows>
+        <cols>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Q1A1-Viz'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f28e2b'>Inquiries and Total Net Bookings for each Sites</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+            <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+            <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Inquiries&quot;' />
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Total Net Bookings&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Inquiries&quot;</bucket>
+              <bucket>&quot;Total Net Bookings&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </sort>
+          <slices>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' scope='rows' value='Measure Values' />
+            <format attr='subtitle' class='0' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' palette='orange_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]</rows>
+        <cols>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Q1A2-Table'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f28e2b'>Inquiries and Total Net Bookings vs 2016 and 2017 </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+            <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+            <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Year of Date Id]' role='dimension' type='nominal' />
+            <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year of Date Id]' derivation='None' name='[none:Year of Date Id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Inquiries&quot;' />
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Total Net Bookings&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Total Net Bookings&quot;</bucket>
+              <bucket>&quot;Inquiries&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </sort>
+          <slices>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' value='115' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' value='156' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' palette='gold_purple_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' />
+              <text column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk] / [federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk])</rows>
+        <cols>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Q1A2-Viz'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f28e2b'>Inquiries and Total Net Bookings vs 2016 and 2017 </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+            <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+            <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Year of Date Id]' role='dimension' type='nominal' />
+            <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year of Date Id]' derivation='None' name='[none:Year of Date Id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Inquiries&quot;' />
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Total Net Bookings&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' scope='rows' value='Number of Requests' />
+            <format attr='subtitle' class='0' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk] * [federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk])</rows>
+        <cols>([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk] / [federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Q1A3-Table'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f28e2b'>Inquiries and Total Net Bookings by Supplier Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+            <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+            <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Supplier Type]' role='dimension' type='nominal' />
+            <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Supplier Type]' derivation='None' name='[none:Supplier Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Inquiries&quot;' />
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Total Net Bookings&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' value='101' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]' value='116' />
+            <format attr='width' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' value='148' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' />
+              <text column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk] / [federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk])</rows>
+        <cols>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Q1A3-Viz'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f28e2b'>Inquiries and Total Net Bookings by Supplier Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+            <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+            <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Supplier Type]' role='dimension' type='nominal' />
+            <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Supplier Type]' derivation='None' name='[none:Supplier Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Inquiries&quot;' />
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Total Net Bookings&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' value='148' />
+            <format attr='width' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' value='64' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk] / ([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk] / [federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]))</rows>
+        <cols>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Q1A4-Table'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f28e2b'>Inquiries and Total Net Bookings by Person Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+            <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+            <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Person Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Person Type]' derivation='None' name='[none:Person Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Inquiries&quot;' />
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Total Net Bookings&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' value='183' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' value='152' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' />
+              <text column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk] / [federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk])</rows>
+        <cols>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Q1A4-Viz'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f28e2b'>Inquiries and Total Net Bookings by Person Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+            <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+            <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Person Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Person Type]' derivation='None' name='[none:Person Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Inquiries&quot;' />
+              <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Total Net Bookings&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk] / ([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk] / [federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]))</rows>
+        <cols>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 15'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+            <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+            <column caption='Measure Values1' datatype='real' name='[Measure Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Year of Date Id]' role='dimension' type='nominal' />
+            <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year of Date Id]' derivation='None' name='[none:Year of Date Id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measure Values]' derivation='Sum' name='[sum:Measure Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]'>
+            <groupfilter function='member' level='[none:Measure Names:nk]' member='&quot;Total Cancellations&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]'>
+            <groupfilter function='member' level='[none:Site:nk]' member='&quot;Site A&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]</column>
+            <column>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' />
+              <text column='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk] / [federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk])</rows>
+        <cols>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='AreaChart'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+        <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Person Type]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Supplier Type]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Year of Date Id]' role='dimension' type='nominal' />
+        <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Person Type]' derivation='None' name='[none:Person Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Supplier Type]' derivation='None' name='[none:Supplier Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year of Date Id]' derivation='None' name='[none:Year of Date Id:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='88625' id='5' param='horz' type='layout-flow' w='98400' x='800' y='10375'>
+            <zone h='88625' id='3' type='layout-basic' w='98400' x='800' y='10375'>
+              <zone h='88625' id='1' name='All-Viz-6' w='98400' x='800' y='10375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='9375' id='11' type='layout-flow' w='15800' x='800' y='1000'>
+            <zone h='9375' id='6' mode='checkdropdown' name='All-Viz-6' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]' type='filter' w='15800' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='9375' id='7' mode='checkdropdown' name='All-Viz-6' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]' type='filter' w='33400' x='16600' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='8' mode='checkdropdown' name='All-Viz-6' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]' type='filter' w='14200' x='50000' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='9' mode='checkdropdown' name='All-Viz-6' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' type='filter' w='24500' x='64200' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='10' name='All-Viz-6' pane-specification-id='0' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' type='color' w='10500' x='88700' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='BarChart'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+        <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Person Type]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Supplier Type]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Year of Date Id]' role='dimension' type='nominal' />
+        <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Person Type]' derivation='None' name='[none:Person Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Supplier Type]' derivation='None' name='[none:Supplier Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year of Date Id]' derivation='None' name='[none:Year of Date Id:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='88625' id='5' param='horz' type='layout-flow' w='98400' x='800' y='10375'>
+            <zone h='88625' id='3' type='layout-basic' w='98400' x='800' y='10375'>
+              <zone h='88625' id='1' name='All-Viz-1' w='98400' x='800' y='10375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='9375' id='11' type='layout-flow' w='14300' x='800' y='1000'>
+            <zone h='9375' id='6' mode='checkdropdown' name='All-Viz-1' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' type='filter' w='14300' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='9375' id='7' mode='checkdropdown' name='All-Viz-1' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]' type='filter' w='18200' x='15100' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='8' mode='checkdropdown' name='All-Viz-1' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' type='filter' w='35300' x='33300' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='9' mode='checkdropdown' name='All-Viz-1' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]' type='filter' w='14600' x='68600' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='10' mode='checkdropdown' name='All-Viz-1' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]' type='filter' w='16000' x='83200' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='TheStory' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Home Away Case Study</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type='layout-flow' w='98426' x='787' y='830'>
+            <zone h='4253' id='3' type='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='98426' x='787' y='5083' />
+            <zone h='83610' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98426' x='787' y='15560'>
+              <flipboard active-id='5' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='             Bubbles' captured-sheet='bubbles' id='2' />
+                  <story-point caption='                Tables' captured-sheet='table' id='1' />
+                  <story-point caption='            Bar Chart' captured-sheet='BarChart' id='3' />
+                  <story-point caption='             Area Chart' captured-sheet='AreaChart' id='4' />
+                  <story-point caption='        Tree Map' captured-sheet='treemaps' id='5' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='bubbles'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+        <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Person Type]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Supplier Type]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Year of Date Id]' role='dimension' type='nominal' />
+        <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Person Type]' derivation='None' name='[none:Person Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Supplier Type]' derivation='None' name='[none:Supplier Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year of Date Id]' derivation='None' name='[none:Year of Date Id:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='88625' id='5' param='horz' type='layout-flow' w='98400' x='800' y='10375'>
+            <zone h='88625' id='3' type='layout-basic' w='98400' x='800' y='10375'>
+              <zone h='88625' id='1' name='All-Viz-2' w='98400' x='800' y='10375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='9375' id='12' type='layout-flow' w='14100' x='800' y='1000'>
+            <zone h='9375' id='6' mode='checkdropdown' name='All-Viz-2' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' type='filter' w='14100' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='9375' id='7' mode='checkdropdown' name='All-Viz-2' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]' type='filter' w='12600' x='14900' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='8' mode='checkdropdown' name='All-Viz-2' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' type='filter' w='31200' x='27500' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='9' mode='checkdropdown' name='All-Viz-2' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]' type='filter' w='24500' x='58700' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='10' mode='checkdropdown' name='All-Viz-2' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]' type='filter' w='16000' x='83200' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='table'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+        <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Person Type]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Supplier Type]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Year of Date Id]' role='dimension' type='nominal' />
+        <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Person Type]' derivation='None' name='[none:Person Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Supplier Type]' derivation='None' name='[none:Supplier Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year of Date Id]' derivation='None' name='[none:Year of Date Id:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='88625' id='5' param='horz' type='layout-flow' w='98400' x='800' y='10375'>
+            <zone h='88625' id='3' type='layout-basic' w='98400' x='800' y='10375'>
+              <zone h='88625' id='1' name='All-Table' w='98400' x='800' y='10375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='9375' id='11' type='layout-flow' w='11100' x='800' y='1000'>
+            <zone h='9375' id='6' mode='checkdropdown' name='All-Table' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' type='filter' w='11100' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='9375' id='7' mode='checkdropdown' name='All-Table' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]' type='filter' w='14900' x='11900' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='8' mode='checkdropdown' name='All-Table' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' type='filter' w='30800' x='26800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='9' mode='checkdropdown' name='All-Table' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]' type='filter' w='21200' x='57600' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='10' mode='checkdropdown' name='All-Table' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]' type='filter' w='20400' x='78800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='treemaps'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='Data (Data Analyst Homework Queestions)' name='federated.0fqd9971pobdc41fchzsx0ctk5mb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0fqd9971pobdc41fchzsx0ctk5mb'>
+        <column caption='Measure Names1' datatype='string' name='[Measure Names]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Person Type]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Supplier Type]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Year of Date Id]' role='dimension' type='nominal' />
+        <column-instance column='[Measure Names]' derivation='None' name='[none:Measure Names:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Person Type]' derivation='None' name='[none:Person Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Supplier Type]' derivation='None' name='[none:Supplier Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year of Date Id]' derivation='None' name='[none:Year of Date Id:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='88625' id='5' param='horz' type='layout-flow' w='98400' x='800' y='10375'>
+            <zone h='88625' id='3' type='layout-basic' w='98400' x='800' y='10375'>
+              <zone h='88625' id='1' name='All-Viz-3' w='98400' x='800' y='10375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='9375' id='11' type='layout-flow' w='15200' x='800' y='1000'>
+            <zone h='9375' id='6' mode='checkdropdown' name='All-Viz-3' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]' type='filter' w='15200' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='9375' id='7' mode='checkdropdown' name='All-Viz-3' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' type='filter' w='11600' x='16000' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='8' mode='checkdropdown' name='All-Viz-3' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' type='filter' w='33400' x='27600' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='9' mode='checkdropdown' name='All-Viz-3' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]' type='filter' w='22200' x='61000' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9375' id='10' mode='checkdropdown' name='All-Viz-3' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]' type='filter' w='16000' x='83200' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' name='Q1A1-Table'>
+      <cards>
+        <edge name='left'>
+          <strip size='487'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='312'>
+            <card pane-specification-id='0' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Q1A1-Viz'>
+      <cards>
+        <edge name='left'>
+          <strip size='608'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='390'>
+            <card pane-specification-id='0' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Q1A2-Table'>
+      <cards>
+        <edge name='left'>
+          <strip size='487'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='390'>
+            <card pane-specification-id='0' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Q1A2-Viz'>
+      <cards>
+        <edge name='left'>
+          <strip size='390'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='312'>
+            <card pane-specification-id='0' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Q1A3-Table'>
+      <cards>
+        <edge name='left'>
+          <strip size='312'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='312'>
+            <card pane-specification-id='0' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Q1A3-Viz'>
+      <cards>
+        <edge name='left'>
+          <strip size='390'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Q1A4-Table'>
+      <cards>
+        <edge name='left'>
+          <strip size='390'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='390'>
+            <card pane-specification-id='0' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Q1A4-Viz'>
+      <cards>
+        <edge name='left'>
+          <strip size='487'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='All-Table'>
+      <cards>
+        <edge name='left'>
+          <strip size='312'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='312'>
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='All-Viz-1'>
+      <cards>
+        <edge name='left'>
+          <strip size='487'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='487'>
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='All-Viz-2'>
+      <cards>
+        <edge name='left'>
+          <strip size='390'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='390'>
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='All-Viz-3'>
+      <cards>
+        <edge name='left'>
+          <strip size='390'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='390'>
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='All-Viz-4'>
+      <cards>
+        <edge name='left'>
+          <strip size='390'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='390'>
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='All-Viz-6'>
+      <cards>
+        <edge name='left'>
+          <strip size='312'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='312'>
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Person Type:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Supplier Type:nk]' type='filter' />
+            <card param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' name='table'>
+      <viewpoints>
+        <viewpoint name='All-Table'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+    <window class='dashboard' name='bubbles'>
+      <viewpoints>
+        <viewpoint name='All-Viz-2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+    <window class='dashboard' name='BarChart'>
+      <viewpoints>
+        <viewpoint name='All-Viz-1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+    <window class='dashboard' name='AreaChart'>
+      <viewpoints>
+        <viewpoint name='All-Viz-6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+    <window class='dashboard' name='treemaps'>
+      <viewpoints>
+        <viewpoint name='All-Viz-3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+    <window class='dashboard' maximized='true' name='TheStory'>
+      <viewpoints />
+      <active id='8' />
+    </window>
+    <window class='worksheet' name='Sheet 15'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='0' param='[federated.0fqd9971pobdc41fchzsx0ctk5mb].[sum:Measure Values:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Measure Names:nk]</field>
+            <field>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Site:nk]</field>
+            <field>[federated.0fqd9971pobdc41fchzsx0ctk5mb].[none:Year of Date Id:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='65' name='Sheet 15' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAABBCAYAAACHMKt6AAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAJJUlEQVR4nO3af1DUdR7H8WfHOTRwYkaDmp2UF1aiRrNfgi0xZ8u9mDiVgfCElIYzl0hG
+      z+KuMlmkxIlL4yQ7M+PAtE5HSrlGEpIb6ErT9UAUlTQOUgewYAYUhw32PvfH8isFWQJkmu/7
+      McMMfL/7+Xzenw/f13c/+529SSmlEEKnfjHSBQgxkiQAQtckAELXJABC1yQAQtckAELXJABC
+      1yQAQtckAELXJABC1yQAQtckAELXJABC1yQAQtckAELXJABC1yQAQtckAELXJABC1yQAQtck
+      AELXJABC1yQAQtckAELXJABC1yQAQtckAELXJABC1yQAQtckAELXJABC1yQAQtckAELXJABC
+      1yQAQtckAELXJABC1yQAQtckAELXJABC1yQAQtckAELXJABC1yQAQtckAELXJABC1yQAQtd+
+      2d8LbDbbjahDiBFxk1JKjXQRQowU2QIJXZMACF2TAAhd+8kBqMmJQdO0Pn5iyKkZyjL7LIIY
+      TSOl5DqvcTRStjOZOHMImqZhNEWSkFFC/Q0oz1UlKRpaTA413QeGcA1LSNE0tOsu0s9VC2fz
+      N5G8IgGLxYIl8QXWbNjJ4fq2rlfU5adiySrrs4d+nwL1xTd2B7ZY5+81OTFEZPqxwZbCrIF2
+      VJNDTEQmfhtspAy4cb+dk7diKeuqNF7asp937/SAK9UUrf+Mb5jFuKEebiSVpKCtPENi7g5i
+      fUe6mBvBwX8/WsfmusdZsXYpd3iOwtHaQI3tM3I/P82DkdMBGB+azDs/aldHfuoWWJpM6PhB
+      BODnoDl/I+sO3kZ87lrmdl4UHncyZ/WSEa3rxppFis1GykiXMeTOcOjzsYSlzOQOT+cRt5u9
+      mTxzAUkD6GXYPwPYzxWSFmcmRNPQjCYWJedxxu48V5MTgxaRSSXwycrO7VMKzjfrFk7mJhP3
+      hAmjpqFpRkyRSeSUN7s4cgOFecW0PfIUkX3eEfsfw7nVS6HwXCEZCeHOeYSEYy3ouYlyUFuU
+      9qNtVlJe9/6luTyHpMiOMULMxKUVUetwdQWBlpPkJsfxhMnoXCOjicikHDrLLEnR0FZ+AlSS
+      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
+    </thumbnail>
+    <thumbnail height='192' name='TheStory' width='192'>
+      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
+      DHgeIGzFAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

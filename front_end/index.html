@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HomeAway Case Study</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <style>
+        #bubble {
+            padding-left: 250px;
+        }
+
+        .jumbotron {
+            background-image: url("hw.png");
+            color: red;
+            background-size: auto 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron" style="text-align: center">
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 color='red'>
+                    <strong>
+                        <center>
+                            <font color="orange">CASE STUDY</font>
+                        </center>
+                    </strong>
+                </h1>
+                <hr>
+            </div>
+            <hr>
+            <div class="col-md-3">
+                <div>
+                    <h2>
+                        Visualizations
+
+                        <h2>
+                            <a href="index1.html">Plots 1</a>
+                            <hr>
+                            <a href="index2.html">Plots 2</a>
+                            <hr>
+                            <a href="index3.html">Plots 3</a>
+                            <hr>
+                            <a href="index4.html">Plots 4</a>
+                        </h2>
+                    </h2>
+
+                    </select>
+                </div>
+                <hr>
+                <div>
+                    <div>
+                        <nav class="controls">
+                            <a href="#" class="button" onClick="stopwatch.start();">Start</a>
+                            <a href="#" class="button" onClick="stopwatch.lap();">Lap</a>
+                            <a href="#" class="button" onClick="stopwatch.stop();">Stop</a>
+                            <a href="#" class="button" onClick="stopwatch.restart();">Restart</a>
+                            <a href="#" class="button" onClick="stopwatch.clear();">Clear Laps</a>
+                        </nav>
+                        <div class="stopwatch"></div>
+                        <ul class="results"></ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h2>
+                    About The Data
+                </h2>
+                <ul>
+                    <li> In .xlsx format </li>
+                    <li> The length of data is 7728</li>
+                    <li> Columns: Site, Month of Date Id, Day of Date Id, Year of Date Id, Measure Names, Person Type, Supplier
+                        Type, Measure Values</li>
+                    <li> Measure Names: Gross Booking Value, Inquiries, Property Detail Page Views, Total Cancellations, Total
+                        Gross Bookings, Total Net Bookings, Transactional Sales</li>
+                    <li>Site: Site A and Site B</li>
+                    <li>Year of Date Id: 2016 and 2017</li>
+                    <li>Person Type: FRBO, PM</li>
+                    <li>Supplier Type: Platform and Integrated</li>
+
+                </ul>
+                <h2>
+                    Assemble and Clean
+                </h2>
+                <ul>
+                    <li> Checking the data for null values </li>
+
+                    <p> No Null values</p>
+                    <li> Converting data into right format to increase analysis performace</li>
+                    <br>
+                    <p> For mySQL and Pandas: csv format</p>
+                    <p> For Salchamy and SQLite DB: Dictionary/JSON format</p>
+                    <p> For R: csv format</p>
+                </ul>
+                <hr>
+                <h2>
+                    Analyze for Trends
+                </h2>
+                <ul>
+                    <li>
+                        <a href="excel.html">Excel</a>
+                    </li>
+                    <li>
+                        <a href="sql.html">mySQL</a>
+                    </li>
+                    <li>
+                        <a href="pandas.html">Python</a>
+                    </li>
+                    <li>
+                        <a href="r.html">R</a>
+                    </li>
+                    <li>
+                        <a href="sqlite.html">SQLite/SQLalchamy</a>
+                    </li>
+                    <li>
+                        <a href="tableau.html">Tableau</a>
+                    </li>
+                </ul>
+                <hr>
+                <h2>
+                    Acknowledge Limitations and Possibilities
+                </h2>
+                <ul>
+                    <li> Time Limit </li>
+                    <li> Regression Analysis and Trend Lines</li>
+                    <li>
+                        <a href="https://github.com/mrbalikci/neural_network_voice_recognition" target="_blank">Machine Learning</a>
+                    </li>
+                    <li> More Interactive Charts</li>
+                    <li> More Functions to Run the Analysis</li>
+
+                </ul>
+            </div>
+
+            <div class='col-md-4'>
+                <h2>Glosary</h2>
+                <li>Property Detail Page Views - Page View of a Property, a measure of traveler demand </li>
+                <li>Total Net Bookings - Bookings net of cancellations </li>
+                <li>Total Gross Bookings - Total Bookings Including Cancellations </li>
+                <li>Inquiries - Traveler message to an owner </li>
+                <li>Gross Booking Value - Total value of a booking </li>
+                <li>Transactional Sales - Sales generated by an individual booking </li>
+                <li>FRBO - For Rent By Owner, generally refers to a property managed by the owner </li>
+                <li>PM - Property Manager - a company that markets and manages the properties for many owners </li>
+                <li>Platform - Properties that use our site tools to manage their property - mostly FRBOs but also includes some
+                    smaller PMs </li>
+                <li>Integrated - Larger PMs that connect with our sites through their own property management software </li>
+                <li>Take Rate - Comparison of transactional sales to gross booking value (transactional sales/gross booking value)
+                </li>
+            </div>
+
+        </div>
+        <hr>
+        <div class="col-md-12">
+            <h2>
+                Select A Question
+            </h2>
+            <select id="d3-dropdown">
+                <option value="What do you think we could do to move travelers from inquiries to bookings?">Question 1</option>
+                <option value="How could we try to decrease the cancellation rate?">Question 2</option>
+                <option value="How could we go about increasing this percentage along with any potential risks to doing so?">Question 3</option>
+
+            </select>
+            <hr>
+            <h2>The Story</h2>
+            <h4 id="selected-dropdown"></h4>
+            <hr>
+            <center>
+                <font color="gray">
+                    <a href="https://mrbalikci.github.io" target="_blank">Erdem Balikci</a>
+                </font>
+            </center>
+        </div>
+    </div>
+    </div>
+    <hr>>
+    <script src="js/plots5.js"></script>
+    <script src="js/time.js"></script>
+    <script src="css/style.css"></script>
+</body>
+
+</html>
